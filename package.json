@@ -1,0 +1,15 @@
+{
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "fs": "^0.0.2",
+    "util": "^0.11.1"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}

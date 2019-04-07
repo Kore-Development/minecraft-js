@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'MinecraftiaRegular';
+      src: url('https://cdn.glitch.com/1be852c1-5340-48c5-b902-daab917da060%2FMinecraftiaRegular.ttf?1554572336333') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Minecraftia';
+      src: url('https://cdn.glitch.com/1be852c1-5340-48c5-b902-daab917da060%2FMinecraftiaRegular.ttf?1554572336333') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+a, a * {
+  text-decoration: none;
+  cursor: default;
+}
+
+body {
+  image-rendering: auto;
+  background-image: url('https://cdn.glitch.com/1be852c1-5340-48c5-b902-daab917da060%2F18w46a.jpg?1554572224315');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translateY(-40vh) translateX(-50vw);
+}
+
+hr {
+  border: 0;
+  border-width: 1px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.button {
+  height: 2.5em;
+  width: 25%;
+  outline: 2px solid black;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  background-image: url('https://cdn.glitch.com/1be852c1-5340-48c5-b902-daab917da060%2Fbutton_center.png?1554572172558');
+  background-repeat: repeat;
+  padding: 0;
+  font-family: 'MinecraftiaRegular';
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px #4C4C4C;
+  border-bottom: 4px solid #565656;
+  border-right: 2px solid #565656;
+  border-left: 2px solid #AAA;
+  border-top: 2px solid #AAA;
+  box-sizing: border-box;
+  font-size: 0.8em;
+}
+
+.button span {
+  position: relative;
+  line-height: 40px;
+  bottom: 7px;
+}
+
+.button:hover {
+  border-bottom: 4px solid #59639A;
+  border-right: 2px solid #59639A;
+  border-left: 2px solid #BDC6FF;
+  border-top: 2px solid #BDC6FF;
+  background-image: url('https://cdn.glitch.com/1be852c1-5340-48c5-b902-daab917da060%2Fbutton_active_center.png?1554572260963');
+  color: #FFFFA0;
+}
+
+.button2 {
+  height: 2.5em;
+  width: 12%;
+  outline: 2px solid black;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  background-image: url('https://cdn.glitch.com/1be852c1-5340-48c5-b902-daab917da060%2Fbutton_center.png?1554572172558');
+  background-repeat: repeat;
+  padding: 0;
+  font-family: 'MinecraftiaRegular';
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px #4C4C4C;
+  border-bottom: 4px solid #565656;
+  border-right: 2px solid #565656;
+  border-left: 2px solid #AAA;
+  border-top: 2px solid #AAA;
+  box-sizing: border-box;
+  font-size: 0.8em;
+}
+
+.button2 span {
+  position: relative;
+  line-height: 40px;
+  bottom: 7px;
+}
+
+.button2:hover {
+  border-bottom: 4px solid #59639A;
+  border-right: 2px solid #59639A;
+  border-left: 2px solid #BDC6FF;
+  border-top: 2px solid #BDC6FF;
+  background-image: url('https://cdn.glitch.com/1be852c1-5340-48c5-b902-daab917da060%2Fbutton_active_center.png?1554572260963');
+  color: #FFFFA0;
+}
+
+.btn2 {
+  margin-left: 9.5px !important;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  top: 0vh;
+  left: 0vw;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  width: 100vw;
+  align-content: center;
+  text-align: center;
+}
+
+.menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  align-content: center;
+  text-align: center;
+}
+
+.logo {
+  height: 15em;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 25vh;
+  left: 0vw;
+  transform: translateY(-190%) translateX(-50%);
+}
+
+.menu, .menu * {
+  z-index: 9999;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  transform: translateY(40vh) translateX(-1vw);
+  font-family: Arial;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
